@@ -15,20 +15,19 @@
 
                 <ul class="navbar">
                     <li>Stylez</li>
-                    <!-- <li class="hideOnMobile"><a>Home</a></li> -->
-                    <li class="hideOnMobile"><a>Categories</a></li>
-                    <li class="hideOnMobile"><a>Our collection</a></li>
-                    <li class="hideOnMobile"><a>Blogs</a></li>
-                    <li class="hideOnMobile"><a>Contact</a></li>
+                    <li class="hideOnMobile"><a href="#categories">Categories</a></li>
+                    <li class="hideOnMobile"><a href="#mens-collection">Our collection</a></li>
+                    <li class="hideOnMobile"><a href="#blogs">Blogs</a></li>
+                    <li class="hideOnMobile"><a href="#footer">Contact</a></li>
                     <li class="hideOnMobile">Login</li>
                     <li><i class="fa-solid fa-cart-shopping"></i></li>
                     <li class="viewOnMobile" id="openNav"><i class="fa-solid fa-bars"></i></li>
                 </ul>
                 <ul class="sidebar" style="padding-left: 0px;">
-                    <li><a>Categories</a></li>
-                    <li><a>Our collection</a></li>
-                    <li><a>Blogs</a></li>
-                    <li><a>Contact</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#mens-collection">Our collection</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#footer">Contact</a></li>
                     <li>Login</li>
 
                 </ul>
@@ -62,7 +61,7 @@
                </div>
         </div>
         <!-- Categories -->
-         <div class="categories">
+         <div class="categories" id="categories">
             <div class="products-title">
                 <h1>Categories</h1>
             </div>
@@ -79,8 +78,8 @@
             </div>
 
          </div>
-               
-         <div class="mens-collection">
+        <!-- Mens Collection -->
+         <div class="mens-collection" id="mens-collection">
             <div class="products-title">
                 <h1>Mens Collection</h1>
                 <a class="products-title-btn">View more <i class="fa-solid fa-arrow-up"></i></a>
@@ -94,7 +93,7 @@
                 <div class="products-scroll-btn"onclick="mensNext()"><i class="fa-solid fa-arrow-right"></i></div>
                </div>
          </div>
-        
+        <!-- Womens Collection -->
          <div class="womens-collection">
             <div class="products-title">
                 <h1>Womens Collection</h1>
@@ -109,7 +108,7 @@
                 <div class="products-scroll-btn"onclick="womensNext()"><i class="fa-solid fa-arrow-right"></i></div>
                </div>
          </div>
-
+        <!-- Kids Collection -->
          <div class="kids-collection">
             <div class="products-title">
                 <h1>Kids Collection</h1>
@@ -124,6 +123,8 @@
                 <div class="products-scroll-btn"onclick="kidsNext()"><i class="fa-solid fa-arrow-right"></i></div>
                </div>
          </div>
+        
+        <!-- Features -->
          <div class="feature-wrap">
             <div class="feature-block"><i class="fa-solid fa-clock fa-2x"></i><p><b>30 days Guarantee</b></p></div>
             <div class="feature-block"><i class="fa-solid fa-globe fa-2x"></i><p><b>Worldwide shipping</b></p></div>
@@ -138,7 +139,7 @@
             </div>
          </div>
          <!-- Blogs -->
-         <div class="blogs">
+         <div class="blogs" id="blogs">
             <div class="products-title">
                 <h1>Articles and Resources</h1>
                 <a class="products-title-btn">View more <i class="fa-solid fa-arrow-up"></i></a>
@@ -153,7 +154,6 @@
 
         <!-- News letter -->
         <div class="newsletter-container">
-
          <div class="newsletter">
             <h1>Stay tune with us for latest collection update</h1>
             <p>By signing up, you consent to receive promotional messages from Stylez.</p>
@@ -163,8 +163,10 @@
         </div>
          </div>
 </main>
+
     <!-- Footer -->
-    <div class="footer">
+<footer>
+    <div class="footer" id="footer">
         <div class="footer-container">
             <div class="footer-section">
                 <h4>Pages</h4>
@@ -195,6 +197,7 @@
         </div>
     </div>
     <div class="copyright"><p> &#169 2024 Stylez. All rights reserved.</p><p>Designed by Vishwanath Hatti</p></div>
+</footer>
     <script src="./js/main.js"></script>
     <script src="https://kit.fontawesome.com/1e0eb1729e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
