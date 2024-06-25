@@ -178,6 +178,7 @@ nav{
     align-items: center;
     margin-top:20px ;
     padding-left: 10px;
+    padding-right:10px;
 }
 
 .products-title h1{
@@ -244,6 +245,7 @@ nav{
     justify-content: end;
     align-items: center;
     gap: 15px;
+    padding-right:10px;
 }
 .products-scroll-btn{
     cursor: pointer;
