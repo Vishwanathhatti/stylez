@@ -87,10 +87,12 @@ nav{
     display: flex;
     flex-direction: column;
 }
+
 .product-info h1, .product-info h2,
 .product-info h3{
-    margin: 6px;
+    margin: 5px;
 }
+
 .product-img{
     width: 40%;
 }
@@ -119,7 +121,8 @@ nav{
     border: 1px solid grey;
 }
 .size:hover{
-    border: 1px solid black;
+    border: 2px solid black;
+    cursor: pointer;
 
 }
 /* Buttons */
