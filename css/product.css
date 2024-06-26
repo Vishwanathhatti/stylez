@@ -87,6 +87,10 @@ nav{
     display: flex;
     flex-direction: column;
 }
+.product-info h1, .product-info h2,
+.product-info h3{
+    margin: 6px;
+}
 .product-img{
     width: 40%;
 }
