@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" type="text/css" href="./css/product.css">
+    <script src="https://kit.fontawesome.com/1e0eb1729e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <nav>
+        <div class="nav">
+
+                <ul class="navbar">
+                    <li><a href="/index.html">Stylez</a></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                </ul>
+
+        </div>
+    </nav>
+
+    <div class="product-details">
+        <div class="product-img">
+            <img id="productImg" src="" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h1 id="productTitle"></h1>
+            <h2 id="productDesc"></h2>
+            <h3><b>₹ <span id="productPrice"></span></b></h3>
+            <div class="sizes">
+            <div class="size">S</div>
+            <div class="size">M</div>
+            <div class="size">L</div>
+            <div class="size">XL</div>
+            <div class="size">XXL</div>
+        </div>
+        <div class="buy-btn">
+            <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            <button class="cart-btn">Buy Now</button>
+        </div>
+        <hr>
+        <div class="delivery-info">
+            <p>Delivery Option <i class="fa-solid fa-truck"></i></p>
+            <div class="delivery-input-box">
+            <input type="text" placeholder="example 411001"><button>Check</button>
+            </div>
+            <p style="color: grey;">Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
+            <p><b>100% original products</b></p>
+            <p><b>Pay on delivery might be available</b></p>
+            <p><b>Easy 30 days return and exchange policy</b></p>
+        </div>
+        
+        <div class="offers">
+            <h1>Best offers <i class="fa-regular fa-bookmark"></i></h1>
+            <ul>
+                    <li>10% off on SBI credit card</li>
+                    <li>10% off on ICICI credit card</li>
+                    <li>5% off on Amazon Wallet</li>
+                    <li>3% off on prepared orders </li>
+                    <li>free delivery on prepared orders</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="details">
+            <h1>Product details <i class="fa-regular fa-rectangle-list"></i></h1>
+            <p id="productDescription"></p>
+            <h3>Size & Fit</h3>
+            <p>Fit: Regular Fit</p>
+            <p>The model (height 6') is wearing a size M</p>
+            <h3>Material & Care</h3>
+            <p>60% Polyester 40% Cotton Machine wash</p>
+        </div>
+        <hr>
+        <div class="seller-info">
+            <h2 style="color: gray;">Seller: <b style="color: black;">OG Retailer's </b></h2>
+            <h2 style="color: gray;">Product code: <b style="color: black;">552866</b></h2>
+            
+        </div>
+        </div>
+       
+        
+    </div>
+
+        <!-- Footer -->
+<footer>
+    <div class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Our Collection</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>Email: info@example.com</li>
+                    <li>Phone: +91 8552866007</li>
+                    <li>Address: RTO Road, Solapur, Maharashta</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright"><p> &#169 2024 Stylez. All rights reserved.</p><p>Designed by Vishwanath Hatti</p></div>
+</footer>
+
+    <script>
+        // Function to get URL parameters
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Get product details from URL parameters
+        var img = getUrlParameter('img');
+        var title = getUrlParameter('title');
+        var desc = getUrlParameter('desc');
+        var price = getUrlParameter('price');
+
+        // Set product details in HTML
+        document.getElementById('productImg').src = img;
+        document.getElementById('productTitle').textContent = title;
+        document.getElementById('productDesc').textContent = desc;
+        document.getElementById('productPrice').textContent = price;
+        document.getElementById('productDescription').textContent = desc;
+
+    </script>
+</body>
+</html>

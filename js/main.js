@@ -63,7 +63,8 @@ function showFeaturedProducts(){
     var clutter='';
     featuredProducts.forEach(function(obj){
         clutter+=`
-            <div class="product-card"><div class="product-img"><img src="${obj.img}"></div><div class="product-info"><p><b>${obj.title}</b></p><p>${obj.desc}</p><p><b>₹ ${obj.price}</b></p></div></div>
+            <a href="product.html?img=${encodeURIComponent(obj.img)}&title=${encodeURIComponent(obj.title)}&desc=${encodeURIComponent(obj.desc)}&price=${encodeURIComponent(obj.price)}" class="product-card"><div class="product-img"><img src="${obj.img}"></div><div class="product-info"><p><b>${obj.title}</b></p><p>${obj.desc}</p><p><b>₹ ${obj.price}</b></p></div></a>
+
 
                 `
     })
@@ -148,7 +149,8 @@ function showMensCollection(){
     var clutter='';
     mensCollection.forEach(function(obj){
         clutter+=`
-            <div class="product-card"><div class="product-img"><img src="${obj.img}"></div><div class="product-info"><p><b>${obj.title}</b></p><p>${obj.desc}</p><p><b>₹ ${obj.price}</b></p></div></div>
+                        <a href="product.html?img=${encodeURIComponent(obj.img)}&title=${encodeURIComponent(obj.title)}&desc=${encodeURIComponent(obj.desc)}&price=${encodeURIComponent(obj.price)}" class="product-card"><div class="product-img"><img src="${obj.img}"></div><div class="product-info"><p><b>${obj.title}</b></p><p>${obj.desc}</p><p><b>₹ ${obj.price}</b></p></div></a>
+
 
                 `
     })
@@ -232,7 +234,8 @@ function showWomensCollection(){
     var clutter='';
     womensCollection.forEach(function(obj){
         clutter+=`
-            <div class="product-card"><div class="product-img"><img src="${obj.img}"></div><div class="product-info"><p><b>${obj.title}</b></p><p>${obj.desc}</p><p><b>₹ ${obj.price}</b></p></div></div>
+                        <a href="product.html?img=${encodeURIComponent(obj.img)}&title=${encodeURIComponent(obj.title)}&desc=${encodeURIComponent(obj.desc)}&price=${encodeURIComponent(obj.price)}" class="product-card"><div class="product-img"><img src="${obj.img}"></div><div class="product-info"><p><b>${obj.title}</b></p><p>${obj.desc}</p><p><b>₹ ${obj.price}</b></p></div></a>
+
 
                 `
     })
@@ -317,7 +320,7 @@ function showKidsCollection(){
     var clutter='';
     kidsCollection.forEach(function(obj){
         clutter+=`
-            <div class="product-card"><div class="product-img"><img src="${obj.img}"></div><div class="product-info"><p><b>${obj.title}</b></p><p>${obj.desc}</p><p><b>₹ ${obj.price}</b></p></div></div>
+            <a href="product.html?img=${encodeURIComponent(obj.img)}&title=${encodeURIComponent(obj.title)}&desc=${encodeURIComponent(obj.desc)}&price=${encodeURIComponent(obj.price)}" class="product-card"><div class="product-img"><img src="${obj.img}"></div><div class="product-info"><p><b>${obj.title}</b></p><p>${obj.desc}</p><p><b>₹ ${obj.price}</b></p></div></a>
 
                 `
     })

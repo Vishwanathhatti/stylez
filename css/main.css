@@ -6,6 +6,11 @@
     scroll-behavior: smooth;
 }
 
+.featured-products-container a, .mens-collection-container a, .womens-collection-container a, .kids-collection-container a{
+    text-decoration: none;
+    color: black;
+}
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -178,7 +183,7 @@ nav{
     align-items: center;
     margin-top:20px ;
     padding-left: 10px;
-    padding-right:10px;
+    padding-right: 10px;
 }
 
 .products-title h1{
@@ -245,7 +250,7 @@ nav{
     justify-content: end;
     align-items: center;
     gap: 15px;
-    padding-right:10px;
+    padding-right: 10px;
 }
 .products-scroll-btn{
     cursor: pointer;
