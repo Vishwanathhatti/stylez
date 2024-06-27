@@ -82,7 +82,6 @@ function productsNext() {
     container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
 }
 
-showFeaturedProducts();
 
 const mensCollection=[
     {
@@ -169,7 +168,7 @@ function mensNext() {
     container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
 }
 
-showMensCollection();
+
 
 const womensCollection=[
     {
@@ -255,7 +254,7 @@ function womensNext() {
     container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
 }
 
-showWomensCollection()
+
 
 const kidsCollection=[
     {
@@ -341,7 +340,6 @@ function kidsNext() {
 }
 
 
-showKidsCollection()
 
 var navbar= document.querySelector('#openNav');
 
@@ -369,4 +367,53 @@ function openNav(){
 
 }
 
-openNav()
+
+
+
+// Blogs
+
+const blogsContainer=[
+    {
+        title:'Shades of summer',
+        article:"Summer is here, and with it comes the opportunity to refresh your wardrobe with the latest trends and styles. At Stylez, we embrace the season's vibrant energy with a collection that captures the essence of sun-soaked days and breezy nights. Think lightweight fabrics, bright colors, and playful patterns that are perfect for beach outings, garden parties, or simply lounging in the sun. This summer, it's all about mixing comfort with style, whether you're slipping into a flowy sundress, pairing a crisp white tee with denim shorts, or accessorizing with wide-brimmed hats and statement sunglasses. Embrace sustainable fashion choices with pieces made from eco-friendly materials, ensuring you look good and feel good about your choices. Stay cool and stylish, and let your wardrobe reflect the carefree spirit of summer with Shades of Summer.",
+        image:'https://img.freepik.com/free-photo/content-women-after-shopping-having-walk_23-2147689090.jpg',
+        tag:'Seasonal Styles',
+    },
+    {
+        title:'Fashion Trends',
+        article:"Fashion trends come and go, but some styles manage to stand the test of time, evolving while maintaining their core appeal. The little black dress, denim jeans, and leather jackets are perfect examples of timeless fashion staples that continue to be relevant. These trends endure because of their versatility, classic appeal, and ability to adapt to changing cultural contexts. Simple lines, neutral colors, and quality fabrics contribute to their longevity, allowing them to be reinvented with modern twists. The emotional and historical significance of these pieces also plays a role, creating a sense of nostalgia and continuity across generations. By blending these timeless elements with contemporary trends, we create a dynamic wardrobe that balances tradition and innovation, ensuring we always look stylish, no matter the era.",
+        image:'https://img.freepik.com/free-photo/clothes-store-with-mannequin_23-2148929527.jpg',
+        tag:'Fashion Trends',
+    }
+]
+function showBlogs(){
+    var clutter = '';
+    blogsContainer.forEach(function(obj){
+        clutter +=` 
+        
+                <div class="blogs-card">
+                <a href="blogs.html?img=${encodeURIComponent(obj.image)}&title=${encodeURIComponent(obj.title)}&article=${encodeURIComponent(obj.article)}&tag=${encodeURIComponent(obj.tag)}">    
+                <div class="blogs-img">
+                        <img class="blogs-image" src="${obj.image}">
+                        <div class="blogs-img-tag">${obj.tag}</div>
+                    </div>
+                    </a>
+                    <div class="blog-info">
+                        <p>${obj.title}</p>
+                        <a href="blogs.html?img=${encodeURIComponent(obj.image)}&title=${encodeURIComponent(obj.title)}&article=${encodeURIComponent(obj.article)}&tag=${encodeURIComponent(obj.tag)}" class="products-title-btn">Read more <i class="fa-solid fa-arrow-up"></i></a>
+                    </div>
+                </div>
+            `
+    })
+    document.querySelector('.blogs-container').innerHTML = clutter;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    openNav();
+    showFeaturedProducts();
+    showMensCollection();
+    showWomensCollection();
+    showKidsCollection();
+    showBlogs();
+    
+});

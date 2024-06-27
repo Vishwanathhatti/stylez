@@ -1,16 +1,12 @@
 *{
     box-sizing: border-box;
-    
 }
-body{
-    margin: 0;
-}
+
 hr{
     height: 2px;
     width: 100%;
 
 }
-
 
 
 /* Navbar */
@@ -74,132 +70,46 @@ nav{
 }
 
 
-/* Product Container */
+/* Blogs container */
 
-.product-details{
+.blogs-container{
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 20px;
-}
-.product-info{
-    width: 50%;
-    display: flex;
+    gap: 15px;
+    padding: 30px;
+    /* overflow: hidden; */
     flex-direction: column;
-}
-
-.product-info h1, .product-info h2,
-.product-info h3{
-    margin: 5px;
-}
-
-.product-img{
-    width: 40%;
-}
-.product-img img{
-    width: 100%;
-}
-
-.sizes{
-    display: flex;
-    /* gap: 20px; */
-}
-.size{
-    font-weight: 700;
-    /* font-size: 20px; */
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 45px;
-    width: 45px;
-    font-size: 12px;
-    flex-shrink: 0;
-    /* padding: 5px; */
-    border-radius: 50%;
-
-    margin: 5px;
-    border: 1px solid grey;
 }
-.size:hover{
-    border: 2px solid black;
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.blogs-buttons{
     cursor: pointer;
-
-}
-/* Buttons */
-.buy-btn{
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.cart-btn{
-    background-color: rgb(255,216,20);
-    border-radius: 12px;
-    border: none;
-    width: 40%;
-    height: 50px;
-}
-.cart-btn:nth-child(2){
-    background-color: transparent;
-    border: 1px solid lightgray;
-}
-.cart-btn:first-child:hover{
-    background-color: rgb(228, 193, 18);
-}
-.cart-btn:nth-child(2):hover{
-    border-color: black ;
+    text-align: center;
 }
 
-/* Delivery info */
-.delivery-input-box input{
-    height: 30px;
-    width: 250px;
-    border-radius: 6px;
-    padding: 5px;
-    border: 1px solid black;
-    background-color: transparent;
-}
-.delivery-input-box{
-    display: flex;
-    justify-content:start ;
-    align-items: center;
+.blog-img{
     position: relative;
+    width: 80%;
 }
-.delivery-input-box button{
-    color: rgb(228, 18, 207);
-    font-weight: 600;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-.delivery-input-box button:hover{
-    color: rgb(248, 22, 226);
-}
-.offers li{
-    margin-bottom: 5px;
-}
-
-@media screen and (max-width:768px) {
-    .product-info{
-        width: 100%;
-    }
-    .product-img{
-        
-        width: 100%;
-    }
-    .size{
-        margin: 5px;
-        height: 40px;
-        width: 40px;
-        font-size: 12px;
-    }
-    .cart-btn{
-        width: 50%;
-    }
+.blog-img img{
+    width: 100%;
+    object-fit: contain;
     
 }
+
+.blog-img-tag{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    background-color: white;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+
 
 
 

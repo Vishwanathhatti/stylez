@@ -442,7 +442,10 @@ nav{
     position: relative;
     overflow: hidden;
 }
-
+a .blogs-img{
+    text-decoration: none;
+    color: #000;
+}
 .blogs-img-tag{
     position: absolute;
     bottom:10%;
