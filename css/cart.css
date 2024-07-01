@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgb(255,216,20);
+
+}
+.cart-container{
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Items Block */
+.items-block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 40%;
+}
+
+.check-pincode{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 233, 170);
+    padding: 10px;
+    border-radius: 12px;
+}
+.check-pincode p{
+    margin: 0;
+    font-weight: 600;
+}
+
+.cart-button{
+    border-radius: 7px;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #b009d1;
+    border:1px solid #b009d1;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out ;
+}
+
+.cart-button:hover{
+    background-color: #b009d1;
+    color: white;
+}
+
+.avail-offers{
+    width: 100%;
+    padding: 10px;
+
+}
+
+.cart-items{
+    width: 100%;
+    padding: 10px;
+}
+.items-option{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.items-option p{
+    cursor: pointer;
+    margin: 0;
+}
+
+.items-container{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.items-card{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 7px;
+    overflow: hidden;
+    gap: 5px;
+    align-items: start;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    padding-right: 5px ;
+
+}
+.items-img{
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+}
+.items-info p{
+    font-weight: 600;
+    margin: 0;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+/* Billing Block */
+.billing-block {
+    width: 40%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.coupons{
+    width: 80%;
+}
+.cart-input{
+    padding: 5px;
+    margin: 2px;
+    width: 80%;
+}
+.billing{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    gap: 10px;
+}
+.bill-line{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-button{
+    width: 80%;
+    height: 40px;
+    background-color: #b009d1;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.2s ease-in;
+}
+.order-button:hover{
+    background-color: transparent;
+    border: 2px solid #b009d1;
+    color: #b009d1;
+}
+
+
+@media screen and (max-width:768px) {
+    .items-block{
+        width: 100%;
+    }
+    .billing-block{
+        width: 100%;
+    }
+}

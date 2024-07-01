@@ -315,6 +315,24 @@ nav{
     transform: scale(1.1);
 }
 
+@media screen and (max-width:500px) {
+    .categories-container{
+        gap:3px;
+    }
+   
+    .categories-card{
+        flex-shrink: 0;
+        height: 150px;
+        width: 150px;
+    }
+}
+@media screen and (max-width:343px) {
+    
+    .categories-container{
+        padding: 0;
+    }
+}
+
 /* Mens Collection */
 .mens-collection-container{
     display: flex;
@@ -326,6 +344,8 @@ nav{
     padding: 20px;
 
 }
+
+
 
 /* Womens Collection */
 .womens-collection-container{
@@ -510,6 +530,10 @@ a .blogs-img{
     padding: 4px;
     position: absolute;
     right: 20%;
+}
+.newsletter-form button:hover{
+    background-color: rgb(179, 179, 179);
+    
 }
 
 @media screen and (max-width:500px){
