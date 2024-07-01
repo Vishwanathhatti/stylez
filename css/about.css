@@ -1,0 +1,61 @@
+nav{
+    background-color: rgb(255,216,20);
+
+}
+
+
+
+.hero {
+    background-image: url('https://img.freepik.com/premium-photo/closeup-colorful-male-female-clothes-boutique-hanging-hangers-clothing-rack-metal-stand-concept-opening-luxury-shop-shopping-mall-store-sale-retail-fashion-store-second-hand-outlet_128384-682.jpg?w=900');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    /* margin-top: 60px; */
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+main {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.about-us {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+}
+
+.about-us h2 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 1.2em;
+}
