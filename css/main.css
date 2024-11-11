@@ -8,6 +8,9 @@
 body::-webkit-scrollbar {
   display: none; /* Hides scrollbar in Chrome, Safari, and Opera */
 }
+body{
+    scrollbar-width: none;
+}
 .featured-products-container a, .mens-collection-container a, .womens-collection-container a, .kids-collection-container a{
     text-decoration: none;
     color: black;
